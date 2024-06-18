@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala Tourism</title>
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #fff;
+            text-shadow: 1px 1px 2px #000;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            overflow: hidden;
+            text-align: center;
+        }
+        nav a {
+            display: inline-block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #1abc9c;
+        }
+        .container {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            margin: 20px;
+            border-radius: 10px;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .content div {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: black;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1;
+            min-width: 300px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        .content img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .blink {
+            animation: blinker 1s linear infinite;
+        }
+        @keyframes blinker {  
+            50% { opacity: 0; }
+        }
+        marquee {
+            color: #1abc9c;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><font face="Georgia">Welcome to Kerala Tourism</font></h1>
+        <p><marquee>Explore the beauty of God's Own Country</marquee></p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#attractions">Attractions</a>
+        <a href="#culture">Culture</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about" class="content">
+            <div>
+                <h2><u>About Kerala</u></h2>
+                <p>Kerala, located in the southern part of India, is renowned for its palm-lined beaches, backwaters, and network of canals. Known as <b>"God's Own Country"</b>, Kerala is a destination where nature, culture, and tradition meet in harmony.</p>
+                <img src="kerala.png" alt="Kerala Scenery">
+            </div>
+        </section>
+        <section id="attractions" class="content">
+            <div>
+                <h2><u>Major Attractions</u></h2>
+                <ul>
+                    <li><strong>Backwaters:</strong> The serene backwaters of Alappuzha and Kumarakom.</li>
+                    <li><strong>Hill Stations:</strong> Munnar and Wayanad offer breathtaking views and cool climate.</li>
+                    <li><strong>Beaches:</strong> Kovalam and Varkala are popular for their golden sands and azure waters.</li>
+                    <li><strong>Wildlife Sanctuaries:</strong> Periyar Wildlife Sanctuary and Silent Valley National Park.</li>
+                </ul>
+                <img src="back water.jpeg" alt="Kerala Backwaters">
+                <img src="hill station.jpeg" alt="Kerala hill stations">
+                <img src="beaches.jpeg" alt="Kerala beaches">
+                <img src="Wildlife Sanctuaries.jpeg" alt="Kerala Wildlife Sanctuaries">
+            </div>
+        </section>
+        <section id="culture" class="content">
+            <div>
+                <h2><u>Culture and Tradition</u></h2>
+                <p>Kerala is rich in culture and traditions. The state is famous for its classical dance forms like <span class="blink">Kathakali</span> and Mohiniyattam, traditional music, and vibrant festivals such as Onam and Vishu. The cuisine of Kerala, known for its use of coconut, spices, and seafood, is a culinary delight.</p>
+                <img src="Kathakali.jpeg" alt="Kathakali Dance">
+                <img src="onam.jpeg" alt="onam">
+                <img src="cuisine of kerala.jpeg" alt="cuisine of kerala">
+                <img src="seafood.jpeg" alt="seafood">
+            </div>
+        </section>
+        <section id="contact" class="content">
+            <div>
+                <h2><u>Contact Us</u></h2>
+                <p>For more information, visit our website or contact us at:</p>
+                <p><b>Email:</b> <a href="mailto:https://www.keralatourismplace.com">https://www.keralatourismplace.com</a></p>
+                <p><b>Phone:</b> +91 12345 67890</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Kerala Tourism. All rights reserved.</p>
+    </footer>
+</body>
+</html>
